@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--? Tailwind CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--? Tailwind CDN-->
+
+    <!--? Locale Style-->
+    <link rel="stylesheet" href="./src/style.css" />
+    <!--? Locale Style-->
+
+    <!--? Alpine JS-->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!--? Alpine JS-->
+  </head>
+  <body class="bg-[#eaeaea]">
+    
+    <!--header start-->
+    <header class="md:mb-14 p-5">
+      <div class="container mx-auto" x-data="dropdown">
+        <div class="md:hidden flex justify-between w-full items-center mb-24 ">
+          <a href="">FB</a>
+          <h2 class="text-4xl">VEN</h2>
+          <!-- * alpinejs burgermenu btn start-->
+          <button  @click="toggle" class="">Menu</button>
+          <!-- * alpinejs burgermenu btn end-->
+        </div>
+        <!--* alpinejs burgermenu nav start-->
+        <nav :hidden="open">
+        <!--* alpinejs burgermenu nav end-->
+
+          <ul class="md:flex md:justify-between md:items-center md:mt-5">
+            <li>
+              <a  class="md:text-2xl uppercase font-medium text-4xl" href="#">services</a>
+            </li>
+            <li>
+              <a class="md:text-2xl uppercase font-medium text-4xl" href="#">clients</a>
+            </li>
+            <li><a class=" md:block md:text-5xl font-bold uppercase hidden" href="#">ven</a></li>
+            <li>
+              <a class="md:text-2xl uppercase font-medium text-4xl" href="#">about</a>
+            </li>
+            <li>
+              <a class="md:text-2xl uppercase font-medium text-4xl" href="#">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--header end-->
+
+    <!--Main start-->
+    <main>
+      
+      <!--Main Screen start-->
+      <section class="main-screen md:mt-32 mt-32 ">
+        <div class="md:container container mx-auto">
+          <h1 class="md:text-7xl uppercase mb-5  text-5xl">
+            <p>
+              Identifying the problems <br />
+              <strong>and</strong>
+              <i class="font-italic"
+                >implementing the <br />
+                solutions.</i
+              >
+            </p>
+          </h1>
+          <div class="low-col md:w-8/12">
+            <p class="md:text-2xl">
+              Your partners in everything digital, <br />
+              offering a full-service solution to grow your business.
+            </p>
+            <button
+              class="md:ml-auto md:p-5 md:flex md:justify-between md:items-center bg-black text-white md:text-2xl uppercase w-72 h-14 hover:bg-gray-600 transition my-8"
+            >
+              get in touch <i class="font-bold">+</i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--Main Screen end-->
+
+      <!--Certificates start-->
+      <section class="certificates">
+        <div class="container mx-auto">
+          <div class="md:flex md:justify-between md:w-3/6">
+            <div class="md:flex md:flex-col">
+              <p class="uppercase mb-2">our certifications</p>
+              <div class="flex">
+                <a href="#"
+                  ><img
+                    class="md:w-16 md:mr-28 w-24 mr-6"
+                    src="./src/images/svg-seeklogo.com.svg"
+                    alt="" /></a
+                ><a href="#"
+                  ><img
+                    class="md:w-16 md:mr-28 w-24 mr-6"
+                    src="./src/images/svg-seeklogo.com.svg"
+                    alt="" /></a
+                ><a href="#"
+                  ><img
+                    class="md:w-16 md:mr-40 w-24"
+                    src="./src/images/svg-seeklogo.com.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="md:flex md:flex-col">
+              <p class="uppercase mb-2">trusted partners</p>
+              <div class="flex flex-wrap md:flex-nowrap">
+                <a href="#"
+                  ><img
+                    class="md:w-16 md:mr-32 w-24 mr-5"
+                    src="./src/images/svg-seeklogo.com.svg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    class="md:w-16 md:mr-32 w-24 mr-5 mb-5"
+                    src="./src/images/svg-seeklogo.com.svg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    class="md:w-16 md:mr-32 w-24 mr-5 mb-5"
+                    src="./src/images/svg-seeklogo.com.svg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    class="md:w-16 md:mr-32 w-24 mr-5 mb-5"
+                    src="./src/images/svg-seeklogo.com.svg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    class="md:w-16 md:mr-32 w-24 mr-5 mb-5"
+                    src="./src/images/svg-seeklogo.com.svg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    class="md:w-16 md:mr-32 w-24 mr-5"
+                    src="./src/images/svg-seeklogo.com.svg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    class="md:w-16 md:mr-32 w-24 mr-5 mb-5"
+                    src="./src/images/svg-seeklogo.com.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Certificates end-->
+
+      <!--Our Clients start-->
+      <section class="our-clients mt-24">
+        <div class="container mx-auto">
+          <div class="md:flex md:justify-between md:items-end">
+            <h2 class="md:text-7xl uppercase text-5xl mb-5">
+              our <br />
+              clients
+            </h2>
+            <p class="mb-2">
+              Choosing VEN Agency as your digital partner means <br />
+              choosing to work with a team that values long-term <br />
+              growth and success for your business above all else.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--carousel start-->
+      <section class="carousel md:mt-40 md:mb-40 mt-24 mb-24  ">
+        <div class="container mx-auto">
+          <div class="md:flex md:justify-between">
+            <img
+              class="md:w-[784px] md:h-[587px]"
+              src="./src/images/lindt.webp"
+              alt=""
+            />
+            <div class="md:flex md:flex-col md:-mt-24">
+              <img
+                class="md:w-[328px] md:h-[238px]"
+                src="./src/images/thumb-2.webp"
+                alt=""
+              />
+              <p class="md:mb-5">
+                Being a team of chocolate lovers, we are thrilled to work with
+                <br />
+                chocolate powerhouse Lindt. Lindt trusts VEN Agency with <br />
+                all their SEO needs (and often rewards us with chocolate!)
+              </p>
+              <p class="md:mb-5">
+                <strong
+                  >“Steve and the team at VEN were the perfect agency to <br />
+                  help us create new, exciting, and specialised pages… the
+                  <br />
+                  content created by VEN was also shared as ‘Best practice’
+                  <br />
+                  by management within Lindt globally.”
+                </strong>
+              </p>
+              <p class="md:mb-5">
+                <strong> THOMAS SCHNETZLER </strong>
+              </p>
+
+              <p>Web Design, Dev & SEO</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--carousel end-->
+
+      <!--service start-->
+      <section class="service md:mb-24">
+        <div class="container mx-auto">
+          <h2 class="uppercase md:text-8xl text-2xl">
+            <p>
+              <strong>A Full Service</strong>
+              holistic, <br />
+              bespoke & collaborative <br />
+              approach
+            </p>
+          </h2>
+          <div class="md:flex mt-12">
+            <p class="uppercase text-2xl">what we do</p>
+          </div>
+          <div class="md:flex md:justify-between">
+            <div class="md:flex md:flex-col md:mt-14">
+              <p class="uppercase text-2xl mt-5">services</p>
+              <p class="uppercase text-2xl md:mt-36 mt-5">view all</p>
+            </div>
+            <div class="md:flex md:flex-col">
+              <p class="md:text-3xl md:-mt-8 mb-5 text-lg">
+                We offer businesses
+                <strong>bespoke</strong>
+                digital solutions, <br />
+                built to stand out from the crowd.
+              </p>
+              <div class="cards md:flex md:justify-between">
+                <div class="card md:mr-24">
+                  <h2 class="uppercase mb-9 md:text-4xl text-xl">
+                    Search <br />
+                    engine <br />
+                    Optimisation
+                  </h2>
+                  <p class="text-lg mb-5">
+                    Full SEO Strategy
+                    <br />
+                    Content Audit
+                    <br />
+                    Technical On Page (Website)
+                    <br />
+                    Website Audit
+                    <br />
+                    Site Architecture
+                    <br />
+                    Consult and Recommendations
+                    <br />
+                    Reputation Management
+                    <br />
+                    CRO UX/UI Audit
+                  </p>
+                </div>
+                <div class="card md:mr-24">
+                  <h2 class="uppercase mb-9 md:text-4xl text-2xl">
+                    digital <br />
+                    marketing
+                  </h2>
+                  <p class="text-lg mb-5">
+                    Social Media Advertising
+                    <br />
+                    Email Marketing
+                    <br />
+                    Lead Generation
+                    <br />
+                    Google Ads
+                    <br />
+                    Content Marketing
+                    <br />
+                    Reporting and Insights
+                  </p>
+                </div>
+                <div class="card">
+                  <h2 class="uppercase md:mb-9 md:text-4xl text-2xl mb-5">
+                    web design <br />
+                    & <br />
+                    development
+                  </h2>
+                  <p class="text-lg mb-5">
+                    New Website Builds
+                    <br />
+                    Industry Leading Website Design
+                    <br />
+                    CRO UX/UI Design and <br />
+                    Development
+                    <br />
+                    Systematic Improvements and <br />
+                    Development <br />
+                    Lead Generation Landing Pages
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--service end-->
+    </main>
+    <!--Main end-->
+
+    <!--footer start-->
+    <footer class="footer bg-black text-white md:p-16 p-5 ">
+      <div class="container mx-auto">  
+        <div class="md:flex md:justify-between ">
+          <div class="left md:flex md:flex-col md:justify-between md:h-[250px]">
+            <div class="text">
+              <h2 class="uppercase font-bold text-3xl">ven agency</h2>
+              <p class="text-xl mb-5">
+                Blog <br />
+                Get in touch <br />
+                Privacy Policy
+              </p>
+            </div>
+            <p class="text-lg mb-5">11 Wilson St, South Yarra, VIC 3141</p>
+          </div>
+          <div class="right">
+            <h2 class="md:text-2xl md:h-4/5 md:flex md:flex-col md:justify-between text-lg mb-5">
+              VEN AGENCY COVERS EVERY ASPECT OF YOUR DIGITAL <br> NEEDS, ENSURING
+              YOUR CLIENTS ARE TRULY ENGAGED <br> AND EXCITED ABOUT WHAT YOUR
+              BUSINESS HAS TO <br> OFFER.
+            </h2>
+            <div class="md:flex md:justify-between">
+              <div class="card">
+                <p>Avaible for collaboration</p>
+                <p>hello@ven.com.au</p>
+              </div>
+              <div class="card">
+                <p>Follow us</p>
+                <p>Instagram @venagency</p>
+              </div>
+              <div class="card">
+                © VEN.2022
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--footer end-->
+    <script>
+      document.addEventListener('alpine:init', () => {
+        Alpine.data('dropdown', () => ({
+            open: false,
+ 
+            toggle() {
+                this.open = ! this.open
+            }
+        }))
+    })
+
+    </script>
+
+  </body>
+</html>

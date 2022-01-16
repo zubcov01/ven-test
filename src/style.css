@@ -1,0 +1,23 @@
+.main-screen::before{
+    content: "";
+    display: block;
+    width: 140vw;
+    height: 250vh;
+    background: radial-gradient(49.11% 49.11% at 50% 50%,#ebaf6a 0,#f16f46 25.2%,#ef372b 34.39%,rgba(228,35,62,.94) 44.6%,rgba(228,18,18,.77) 52.77%,rgba(209,40,40,.66) 60.3%,rgba(207,53,52,.38) 72.83%,rgba(207,53,52,.08) 86.62%,rgba(239,239,239,0) 100%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    z-index: -2;
+    overflow-y: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+@media (max-width: 480px) {
+    .main-screen::before{
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+}
